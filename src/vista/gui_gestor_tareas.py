@@ -42,7 +42,7 @@ class GestorTareasGUI:
             self.gestor.marcar_completada(indice)
             self.actualizar_lista()
         else:
-            messagebox.showwarning("Advertencia", "Selecciona una tarea para marcar como completada")
+            messagebox.showwarning("Advertencia", "Selecciona una tarea de la lista para marcar como completada")
     def eliminar_tarea(self):
         seleccion = self.tareas_listbox.curselection()
         if seleccion:
@@ -50,7 +50,7 @@ class GestorTareasGUI:
             self.gestor.eliminar_tarea(indice)
             self.actualizar_lista()
         else:
-            messagebox.showwarning("Advertencia", "Selecciona una tarea para eliminar")
+            messagebox.showwarning("Advertencia", "Selecciona una tarea de la lista para eliminar")
 def run():
     root = tk.Tk()
     gestor = GestorTareas()
